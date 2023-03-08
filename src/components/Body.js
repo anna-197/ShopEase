@@ -16,6 +16,8 @@ function filterData(searchText, shopsList) {
    
 }
 
+
+
 //  SHOPS CARD
 const ShopsCard = ({
 
@@ -30,7 +32,9 @@ const ShopsCard = ({
     rating,
   
     items,
-  }) => {
+  }
+    
+  ) => {
     return (
       <div className="card">
         <img
@@ -43,12 +47,15 @@ const ShopsCard = ({
         <h2>{name}</h2>
 
         <h5>{address}</h5>
+       
   
-        <h3>{items.name}</h3>
+        <h4>{items.map((items) => 
+                             <div>{items.name} :  {items.quantity}</div>
+                           )}</h4>
 
-        <h4>{rating} stars </h4>
+        <h5>{rating} stars </h5>
   
-        <h4>{distance} km </h4>
+        <h5>{distance} km </h5>
       </div>
     );
   };
