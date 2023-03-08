@@ -1,6 +1,36 @@
 import shopsList from "../Config"
 import { useState} from "react";
 
+//  SHOPS CARD
+const ShopsCard = ({
+    name,
+
+    address,
+
+    distance,
+
+    rating,
+  
+    items,
+  }) => {
+    return (
+      <div className="card">
+        <img
+          src={
+            "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/"  
+            
+          }
+        />
+  
+        <h2>{name}</h2>
+  
+        <h3>{items.join(", ")}</h3>
+  
+        <h4>{distance} km </h4>
+      </div>
+    );
+  };
+
 // BODY
 const Body = () => {
 
@@ -57,13 +87,13 @@ const Body = () => {
         </button>
 
         </div>
-        {/* <div className="restaurant-list">
-          {restaurants.map((restaurant) => {
+        <div className="shops-list">
+          {shops.map((shops) => {
             return (
-              <RestaurantCard {...restaurant.data} key={restaurant.data.id} />
+              <ShopsCard {...shops.data} key={shops.data.id} />
             );
           })}
-        </div> */}
+        </div>
       </>
     );
   };
