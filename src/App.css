@@ -1,0 +1,47 @@
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+  border: 1px solid black;
+}
+
+
+.nav-items>ul {
+  list-style-type: none;
+  display: flex;
+}
+
+
+.nav-items>ul>li {
+  padding: 10px;
+}
+
+
+.logo {
+  width: 100px;
+  margin-left: 5px;
+  margin-top: 2px;
+  height: 75px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 10px;
+  width: 98%;
+  margin: 10px;
+  border: 1px solid black;
+}
+
+
+.footer-items>ul {
+  list-style-type: none;
+  display: flex;
+}
+
+
+.footer-items>ul>li {
+  padding: 10px;
+}
