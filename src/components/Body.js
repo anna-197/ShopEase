@@ -1,9 +1,22 @@
 import shopsList from "../Config"
 import { useState} from "react";
 
+//   FILTER DATA FUNCTION
+
+function filterData(searchText, shopsList) {
+
+    const filterData = shopsList.filter((shop) =>
+   
+       shop.data.name.includes(searchText)
+   
+     );
+   
+   
+     return filterData;
+   
+}
+
 //  SHOPS CARD
-
-
 const ShopsCard = ({
 
     img,
@@ -80,11 +93,11 @@ const Body = () => {
 
             //need to filter the data
 
-            // const data = filterData(searchText, restaurantList);
+            const data = filterData(searchText, shopsList);
 
             // update the state - shops
 
-            setShops(shopsList);
+            setShops(data);
 
 
           }}
