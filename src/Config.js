@@ -7,6 +7,7 @@ const shopsList = [
             "distance": 5,
             "rating": 4.2,
             "id": 178,
+            "img": "https://relianceretail.com/img/menu-brandimg.jpg",
             "items": [
             {
                 "name": "Basmati Rice",
@@ -45,6 +46,7 @@ const shopsList = [
             "distance": 10,
             "rating": 4.5,
             "id": 142,
+            "img": "https://sugermint.com/wp-content/uploads/2021/08/Big-Bazaar.jpg",
             "items": [
               {
                 "name": "Potato",
@@ -83,6 +85,7 @@ const shopsList = [
             "distance": 15,
             "rating": 4.1,
             "id": 78,
+            "img": "https://i.ytimg.com/vi/UnwR--rZsGM/maxresdefault.jpg",
             "items": [
               {
                 "name": "Chana Dal",

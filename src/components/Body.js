@@ -2,7 +2,12 @@ import shopsList from "../Config"
 import { useState} from "react";
 
 //  SHOPS CARD
+
+
 const ShopsCard = ({
+
+    img,
+
     name,
 
     address,
@@ -17,14 +22,18 @@ const ShopsCard = ({
       <div className="card">
         <img
           src={
-            "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/"  
+            img  
             
           }
         />
   
         <h2>{name}</h2>
+
+        <h5>{address}</h5>
   
-        <h3>{items.join(", ")}</h3>
+        <h3>{items.name}</h3>
+
+        <h4>{rating} stars </h4>
   
         <h4>{distance} km </h4>
       </div>
